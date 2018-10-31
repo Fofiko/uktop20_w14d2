@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-// import SongList from '../components/SongList'
+import SongList from '../components/SongList'
 // import SongItem from '../components/SongItem'
 
 class Top20Container extends Component {
@@ -30,7 +30,7 @@ class Top20Container extends Component {
         return (
             <div className='top20-box'>
                 <h1>UK Top 20</h1>
-                {/* <SongList /> */}
+                <SongList songs={this.state.songs}/>
                 {/* <SongItem /> */}
             </div>
         )
