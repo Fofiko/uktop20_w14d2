@@ -1,11 +1,14 @@
-import React from 'react';
+import React, { Component }from 'react';
 
-const SongItem = ({position, title, artist}) => {
-    <div className='song'>
-        <p>#{position} {title}</p>
-        <p>Artist: {artist}</p>
-        <p>Genre: {genre}</p>
-    </div>
+class SongItem extends Component {
+    render() {
+        return (
+            <div className='song'>
+                <p>{this.props.position} {this.props.title}</p>
+                <p>Artist: {this.props.artist}</p>
+            </div>
+        )
+    }
 }
 
 export default SongItem;
